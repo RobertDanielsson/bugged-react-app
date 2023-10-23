@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { RegisteredStudents } from "./RegisteredStudents";
-import { getTotalAge } from "../helpers/helpers";
+import { getTotalAge } from "../../helpers/helpers";
 
 const mockRegisteredStudents = [
   {

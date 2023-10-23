@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { RegisteredTeachers } from "./RegisteredTeachers";
-import { Teacher } from "../types/types";
+import { Teacher } from "../../types/types";
 
 const mockTeachers: Teacher[] = [
   {

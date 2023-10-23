@@ -1,5 +1,5 @@
 import React from "react";
-import { getFullName } from "../helpers/helpers";
+import { getFullName } from "../../helpers/helpers";
 
 export const RegisteredTeachers = ({ teachers }) => {
   return (

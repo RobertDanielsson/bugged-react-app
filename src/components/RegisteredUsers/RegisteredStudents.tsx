@@ -3,7 +3,7 @@ import {
   getFullName,
   getTotalAge,
   getTotalRegistered,
-} from "../helpers/helpers";
+} from "../../helpers/helpers";
 
 interface RegisteredStudentsProps {
   registeredStudents: any[];

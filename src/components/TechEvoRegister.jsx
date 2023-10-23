@@ -1,9 +1,8 @@
-import { AddTeacher } from "./AddTeacher";
-import { AddStudent } from "./AddStudent";
 import React, { useState } from "react";
-import { RegisteredStudents } from "./RegisteredStudents";
-import { RegisteredTeachers } from "./RegisteredTeachers";
-import { Student, Teacher } from "../types/types";
+import { AddStudent } from "./AddUsers/AddStudent";
+import { RegisteredStudents } from "./RegisteredUsers/RegisteredStudents";
+import { AddTeacher } from "./AddUsers/AddTeacher";
+import { RegisteredTeachers } from "./RegisteredUsers/RegisteredTeachers";
 
 export const TechEvoRegister = () => {
   const [registeredStudents, setRegisteredStudents] = useState([]);

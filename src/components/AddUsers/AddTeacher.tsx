@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Teacher } from "../types/types";
+import { Teacher } from "../../types/types";
 
 interface AddTeacherProps {
   addTeacher: (teacher: Teacher) => void;
