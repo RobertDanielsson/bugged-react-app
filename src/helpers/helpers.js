@@ -1,5 +1,5 @@
 export const getFullName = (user) => {
-  return `${user.firstname} ${user.lastName}`;
+  return `${user.firstname ?? "☠️"} ${user.lastName}`;
 };
 
 export const getTotalAge = (users) => {
