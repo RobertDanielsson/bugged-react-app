@@ -45,6 +45,7 @@ describe("AddStudent Component", () => {
     userEvent.type(screen.getByLabelText("Förnamn"), "John");
     userEvent.type(screen.getByLabelText("Efternamn"), "Doe");
     userEvent.type(screen.getByLabelText("Ålder"), "25");
+    userEvent.type(screen.getByLabelText("Email"), "janne@hej.se");
 
     userEvent.click(screen.getByText("Spara"));
 
@@ -52,6 +53,7 @@ describe("AddStudent Component", () => {
       firstName: "John",
       lastName: "Doe",
       age: "25",
+      email: "janne@hej.se",
     });
   });
 
@@ -67,6 +69,7 @@ describe("AddStudent Component", () => {
     userEvent.type(screen.getByLabelText("Förnamn"), "John");
     userEvent.type(screen.getByLabelText("Efternamn"), "Doe");
     userEvent.type(screen.getByLabelText("Ålder"), "25");
+    userEvent.type(screen.getByLabelText("Email"), "janne@hej.se");
 
     userEvent.click(screen.getByText("Avbryt"));
     userEvent.click(addButton);
@@ -74,5 +77,6 @@ describe("AddStudent Component", () => {
     expect(screen.getByLabelText("Förnamn")).toHaveValue("");
     expect(screen.getByLabelText("Efternamn")).toHaveValue("");
     expect(screen.getByLabelText("Ålder")).toHaveValue("");
+    expect(screen.getByLabelText("Email")).toHaveValue("");
   });
 });

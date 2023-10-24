@@ -5,7 +5,7 @@ export const AddStudent = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState("");
-  //TODO: Add email to registration
+  const [email, setEmail] = useState("");
 
   const handleAddStudent = (event) => {
     event.preventDefault();
@@ -13,7 +13,8 @@ export const AddStudent = (props) => {
     const newStudent = {
       firstName,
       lastName,
-      age: age,
+      age,
+      email,
     };
 
     props.addStudent(newStudent);
@@ -63,6 +64,16 @@ export const AddStudent = (props) => {
                   type="text"
                   value={age}
                   onChange={(e) => setAge(e.target.value)}
+                />
+              </div>
+              <div className="input-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  required
+                  id="email"
+                  type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <button type="submit">Spara</button>

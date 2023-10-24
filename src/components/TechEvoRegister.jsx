@@ -3,6 +3,7 @@ import { AddStudent } from "./AddUsers/AddStudent";
 import { RegisteredStudents } from "./RegisteredUsers/RegisteredStudents";
 import { AddTeacher } from "./AddUsers/AddTeacher";
 import { RegisteredTeachers } from "./RegisteredUsers/RegisteredTeachers";
+import { SendGroupEmail } from "./SendGroupEmail/SendGroupEmail";
 
 export const TechEvoRegister = () => {
   const [registeredStudents, setRegisteredStudents] = useState([]);
@@ -14,6 +15,10 @@ export const TechEvoRegister = () => {
 
   const handleAddStudent = (student) => {
     setRegisteredStudents([...registeredStudents, student]);
+  };
+
+  const handleSendGroupEmail = (emails) => {
+    console.log(emails);
   };
 
   return (
@@ -28,6 +33,12 @@ export const TechEvoRegister = () => {
         <section className="user-section">
           <AddTeacher addTeacher={handleAddTeacher} />
           <RegisteredTeachers teachers={registeredTeachers} />
+        </section>
+        <section>
+          <SendGroupEmail
+            students={registeredStudents}
+            sendGroupEmail={handleSendGroupEmail}
+          />
         </section>
       </div>
     </div>
