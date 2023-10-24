@@ -51,7 +51,7 @@ describe("AddStudent Component", () => {
     expect(mockAddStudent).toHaveBeenCalledWith({
       firstName: "John",
       lastName: "Doe",
-      age: 25,
+      age: "25",
     });
   });
 

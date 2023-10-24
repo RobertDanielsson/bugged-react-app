@@ -42,9 +42,8 @@ describe("RegisteredStudents Component", () => {
   });
 
   it("displays the total number of registered students", () => {
-    render(<RegisteredStudents registeredStudents={mockRegisteredStudents} />);
-    const totalRegisteredStudents = screen.getByText(/Totalt anmälda:/);
-    expect(totalRegisteredStudents).toHaveTextContent("Totalt anmälda: 2");
+    //TODO
+    expect(1).toBe(2);
   });
 
   it("displays the total age of registered students (VERY IMPORTANT)", () => {

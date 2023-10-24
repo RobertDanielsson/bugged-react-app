@@ -67,7 +67,9 @@ export const AddTeacher = ({ addTeacher }: AddTeacherProps) => {
                 />
               </div>
               <button type="submit">Spara</button>
-              <button onClick={() => setDisplayModal(false)}>Avbryt</button>
+              <button type="button" onClick={() => setDisplayModal(false)}>
+                Avbryt
+              </button>
             </form>
           </div>
         </div>

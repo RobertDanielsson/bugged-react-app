@@ -16,6 +16,18 @@
 * Some tests aren't passing ❌
 * Probably more stuff, find it and fix it 🐞
 
-## To get started, start the app via the terminal by running "npm start". 
+## Goals
+
+* Implement Typescript
+* Fix the bugs
+* Add missing tests
+* Implement additional features, for example removing students. Or whatever you find interesting 🦾
+* Write down your findings. ✍🏼
+  * What went well, what was difficult and which improvements did you implement?
+  * Did TS improve the code?
+  * Did TS help you find the bugs?
+  * Any additional thoughts
+
+## To get started, start the app via the terminal by running "npm start".
 ### Pro tip: Run the tests to see what is failing. Either via your IDE or the terminal by running "*npm run test*".
 #### *Super-pro tip*: Don't trust your tests *too much* 👀 
