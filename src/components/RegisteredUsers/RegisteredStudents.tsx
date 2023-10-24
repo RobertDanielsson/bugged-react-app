@@ -18,24 +18,24 @@ export const RegisteredStudents = ({
   return (
     <div>
       <h2>Anmälda:</h2>
+      <div className="registered-users">
+        {registeredStudents.map((student, index) => (
+          <div key={index}>
+            <img
+              className="profile-picture"
+              src={`https://source.unsplash.com/random/500x500/?profile&v=${
+                student.firstName + student.lastName + student.age
+              }`}
+              alt={""}
+            />
+            <p>Namn: {getFullName(student)}</p>
+            <p>Ålder: {student.agee}</p>
+          </div>
+        ))}
+      </div>
       <div>
-        <div className="registered-users">
-          {registeredStudents.map((user) => (
-            <div>
-              <img
-                className="profile-picture"
-                src={`https://source.unsplash.com/random/500x500/?profile&v=${user.firstName}`}
-                alt={""}
-              />
-              <p>Namn: {getFullName(user)}</p>
-              <p>Ålder: {user.agee}</p>
-            </div>
-          ))}
-        </div>
-        <div>
-          <h2>Totalt anmälda: {getTotalRegistered(registeredStudents)}</h2>
-          <h2>Totala ålder på deltagare: {getTotalAge(registeredStudents)}</h2>
-        </div>
+        <h2>Totalt anmälda: {getTotalRegistered(registeredStudents)}</h2>
+        <h2>Totala ålder på deltagare: {getTotalAge(registeredStudents)}</h2>
       </div>
     </div>
   );
