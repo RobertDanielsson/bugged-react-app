@@ -69,17 +69,14 @@ export const SendGroupEmail = ({
             </label>
           </div>
         ))}
-        <br />
-        <label>
-          Ämnesrad:
-          <input type="text" />
-        </label>
-        <br />
-        <label>
-          Meddelande:
-          <textarea></textarea>
-        </label>
-        <br />
+        <div className="input-group">
+          <label htmlFor="subject">Ämnesrad:</label>
+          <input id="subject" type="text" />
+        </div>
+        <div className="input-group">
+          <label htmlFor="message">Meddelande:</label>
+          <textarea id="message"></textarea>
+        </div>
         <button type="submit">Skicka</button>
       </form>
     </div>

@@ -34,6 +34,7 @@ export const TechEvoRegister = () => {
           <AddTeacher addTeacher={handleAddTeacher} />
           <RegisteredTeachers teachers={registeredTeachers} />
         </section>
+        <hr />
         <section>
           <SendGroupEmail
             students={registeredStudents}

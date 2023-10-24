@@ -27,6 +27,7 @@
   * Did TS improve the code?
   * Did TS help you find the bugs?
   * Any additional thoughts
+* Bonus: Add some styling 👩🏼‍🎨
 
 ## To get started, start the app via the terminal by running "npm start".
 ### Pro tip: Run the tests to see what is failing. Either via your IDE or the terminal by running "*npm run test*".
