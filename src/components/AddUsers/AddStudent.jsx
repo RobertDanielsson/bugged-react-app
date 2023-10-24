@@ -5,6 +5,7 @@ export const AddStudent = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState("");
+  //TODO: Add email to registration
 
   const handleAddStudent = (event) => {
     event.preventDefault();

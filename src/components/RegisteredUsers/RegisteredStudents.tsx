@@ -12,6 +12,9 @@ interface RegisteredStudentsProps {
 export const RegisteredStudents = ({
   registeredStudents,
 }: RegisteredStudentsProps) => {
+  //TODO: Show email if it exists
+  //TODO: Implement functionality to remove registered students
+
   return (
     <div>
       <h2>Anmälda:</h2>
