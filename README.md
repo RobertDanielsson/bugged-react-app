@@ -29,6 +29,6 @@
   * Any additional thoughts
 * Bonus: Add some styling 👩🏼‍🎨
 
-## To get started, start the app via the terminal by running "npm start".
+## To get started, start the app via the terminal by running "npm install" and then "npm run".
 ### Pro tip: Run the tests to see what is failing. Either via your IDE or the terminal by running "*npm run test*".
 #### *Super-pro tip*: Don't trust your tests *too much* 👀 
